@@ -28,3 +28,40 @@ html, body{
   max-width: 500px;
   margin: 0 auto;
 }
+
+.contact-form{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  -webkit-transfrom: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  width: 400px;
+  height: 500px;
+  padding: 80px 40px;
+  background: rgba(0,0,0,0.6);
+}
+
+.avatar{
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  top: calc(-80px/2);
+  left: calc(50% - 40px);
+}
+
+.contact-form h2{
+  margin: 0;
+  padding: 0 0 20px;
+  color: white;
+  text-align: center;
+}
+
+.contact-form input{
+  width: 100%;
+  margin-bottom: 20px;
+}
