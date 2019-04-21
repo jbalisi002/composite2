@@ -1,12 +1,13 @@
 var count=2;
+var usernameArray = ["admin"];
+var passwordArray = ["123"];
 
 function validate(){
 
   var user = document.login.username.value;
   var pass = document.login.password.value;
   var valid = false;
-  var usernameArray = ["admin", "Monty"];
-  var passwordArray = ["123", "321"];
+
 
   for(var i = 0; i < usernameArray.length; i++)
 {
@@ -35,11 +36,55 @@ function validate(){
   }
 
   else{
-
+      alert("Incorrect password or username");
+      document.login.username.value = "No account? Click the sign up button!";
+      document.login.password.value = "Create an account";
+      document.login.username.disabled = true;
+      document.login.password.disabled = true;
+      return false;
   }
 
 }
 
+///////////////////////////
+function register(){
+  var newUser = document.getElementById('newUser').value;
+  var newPass = document.getElementById('newPass').value;
+
+  usernameArray.push(newUser);
+  passwordArray.push(newPass);
+
+  var uval = "";
+  var pval = "";
+
+  for(i=0; i < usernameArray.length; i++){
+    uval = uval + usernameArray[i];
+  }
+
+  for(p=0; p < passwordArray.length; p++){
+    pval = pval + passwordArray[i];
+  }
+
+
+
+
+
+
+
+  alert("Sign up was successfull!");
+}
+
+
+
+
+
+
+
+
+
+
+
+//////////////////////////
 function logout(){
   window.location.replace("login.html");
 }
