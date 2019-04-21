@@ -197,6 +197,7 @@
   padding-top: calc(0.375em - 1px);
   position: relative;
   vertical-align: top;
+  margin-right: 50px;
 }
 
 .button:focus, .input:focus,
@@ -10521,6 +10522,6 @@ label.panel-block:hover {
 
 .footer {
   background-color: #fafafa;
-  padding: 3rem 1.5rem 6rem;
+  padding: 15px;
 }
 /*# sourceMappingURL=bulma.css.map */

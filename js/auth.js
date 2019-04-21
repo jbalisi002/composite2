@@ -21,7 +21,7 @@ function validate(){
 }
   if(valid){
     alert("Login was successful");
-    window.location.replace("profile.html");
+    window.location.replace("home.html");
     return false;
   }
   var again = " tries";
@@ -36,11 +36,9 @@ function validate(){
   }
 
   else{
-      alert("Incorrect password or username");
-      document.login.username.value = "No account? Click the sign up button!";
-      document.login.password.value = "Create an account";
-      document.login.username.disabled = true;
-      document.login.password.disabled = true;
+      alert("Create an account!");
+      document.login.username.value = "";
+      document.login.password.value = "";
       return false;
   }
 
@@ -64,11 +62,6 @@ function register(){
   for(p=0; p < passwordArray.length; p++){
     pval = pval + passwordArray[i];
   }
-
-
-
-
-
 
 
   alert("Sign up was successfull!");
