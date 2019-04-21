@@ -15,7 +15,9 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/bulma.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <script src="js/auth.js"></script>
 
   </head>
 
@@ -42,21 +44,24 @@
 <!-- login/signup form -->
 <div class="contact-form">
     <img src="img/login.png" class="avatar">
-    <h2>Login</h2>
-  <form action="">
+    <h2>LOGIN</h2>
+  <form name="login" onsubmit="return validateForm() ;" method="post">
     <div class="textbox">
-      <input class=" input is-rounded" type="text" placeholder="Username">
+      <input class="username input is-rounded" type="text" placeholder="Username">
     </div>
 
     <div class="textbox">
-      <input class=" input is-rounded" type="password" placeholder="Password">
+      <input class="password input is-rounded" type="password" placeholder="Password">
     </div>
 
-    <input class="btn" type="button" value="Sign in">
+    <input class="submit button is-info" type="button" value="Sign in" name="submit" onclick="validate()">
 
  </form>
 </div>
 <!----------------------->
+
+
+
 
 
   </div>
