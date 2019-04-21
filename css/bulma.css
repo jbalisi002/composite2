@@ -1580,10 +1580,10 @@ a.box:active {
 }
 
 .button {
-  background-color: white;
-  border-color: #dbdbdb;
+  background-color: #882688;
+  border-color: white;
   border-width: 1px;
-  color: #363636;
+  color: white;
   cursor: pointer;
   justify-content: center;
   padding-bottom: calc(0.375em - 1px);
@@ -2250,13 +2250,13 @@ fieldset[disabled] .button.is-link.is-inverted.is-outlined {
 }
 
 .button.is-info {
-  background-color: #209cee;
+  background-color: #882688;
   border-color: transparent;
   color: #fff;
 }
 
 .button.is-info:hover, .button.is-info.is-hovered {
-  background-color: #1496ed;
+  background-color: pink;
   border-color: transparent;
   color: #fff;
 }
@@ -2271,7 +2271,7 @@ fieldset[disabled] .button.is-link.is-inverted.is-outlined {
 }
 
 .button.is-info:active, .button.is-info.is-active {
-  background-color: #118fe4;
+  /* background-color: #118fe4; */
   border-color: transparent;
   color: #fff;
 }
@@ -6303,7 +6303,7 @@ a.list-item {
 }
 
 .navbar {
-  background-color: white;
+  /* background-color: white; */
   min-height: 3.25rem;
   position: relative;
   z-index: 30;
@@ -10521,7 +10521,7 @@ label.panel-block:hover {
 }
 
 .footer {
-  background-color: #fafafa;
+  /* background-color: #fafafa; */
   padding: 15px;
 }
 /*# sourceMappingURL=bulma.css.map */
