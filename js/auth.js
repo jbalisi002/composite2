@@ -6,7 +6,7 @@ function validate(){
   var pass = document.login.password.value;
   var valid = false;
   var usernameArray = ["admin", "Monty"];
-  var passwordArray = ["420", "321"];
+  var passwordArray = ["123", "321"];
 
   for(var i = 0; i < usernameArray.length; i++)
 {
@@ -20,7 +20,7 @@ function validate(){
 }
   if(valid){
     alert("Login was successful");
-    window.location = "profile.html";
+    window.location.replace("profile.html");
     return false;
   }
   var again = " tries";
@@ -38,6 +38,8 @@ function validate(){
 
   }
 
+}
 
-
+function logout(){
+  window.location.replace("login.html");
 }

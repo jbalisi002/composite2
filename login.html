@@ -11,7 +11,6 @@
     <meta name="author" content="JB">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!--<link rel="stylesheet" href="css/reset.css"> -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/bulma.css">
 
@@ -36,12 +35,10 @@
     <div class="inner">
       <div class="content">
 
-  <div class="login-box">
 
 
 
-
-<!-- login/signup form -->
+<!-- login form -->
 <div class="contact-form">
     <img src="img/login.png" class="avatar">
     <h2>LOGIN</h2>
@@ -54,9 +51,32 @@
       <input class="password input is-rounded" type="password" placeholder="Password" name="password">
     </div>
 
-    <input class="submit button is-info" type="button" value="Sign in" name="submit" onclick="validate()">
+    <input class="submit button is-info" type="button" value="Log in" name="submit" onclick="validate()">
 
- </form>
+    <p class="center-text message1">Not yet registered? <a href="#"> Sign up now!</a></p>
+</form>
+<!------------->
+
+<!-- Sign up form -->
+
+    <div class="login-page">
+      <div class="form">
+        <form class="register-form" name="signup">
+
+          <input class="input is-rounded" type="text" placeholder="Enter Username">
+          <input class="input is-rounded" type="password" placeholder="Enter Password">
+          <input class="button is-info" type="button" value="Sign up" name="submit" onclick="">
+
+          <p class="center-text message2">Already have an account? <a href="#"> Log in! </a></p>
+
+        </form>
+
+      </div>
+    </div>
+
+
+
+
 </div>
 <!----------------------->
 
@@ -67,7 +87,6 @@
   </div>
 
   </div>
- </div>
 </section>
 <!----------->
 
@@ -83,9 +102,19 @@
 
 
 
+<script src='https://code.jquery.com/jquery-3.4.0.min.js'></script>
 
+<script>
 
+$('.message1 a').click(function(){
+  $('form').animate({height: "toggle", opacity:"toggle"}, "slow")
+});
 
+$('.message2 a').click(function(){
+  $('form').animate({height: "toggle", opacity:"toggle"}, "slow")
+});
+
+</script>
 
 
 

@@ -8,6 +8,11 @@ html, body{
   font-family: 'Montserrat', sans-serif;
 }
 
+.center-text{
+  text-align: center;
+  color: white;
+}
+
 .intro{
   height: 100%;
   width: 100%;
@@ -40,7 +45,7 @@ html, body{
   -o-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
   width: 400px;
-  height: 500px;
+  height: auto;
   padding: 80px 40px;
   background: rgba(0,0,0,0.6);
 }
@@ -65,4 +70,8 @@ html, body{
 .contact-form input{
   width: 100%;
   margin-bottom: 20px;
+}
+
+.form .register-form{
+  display: none;
 }
