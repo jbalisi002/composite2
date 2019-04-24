@@ -76,6 +76,10 @@ function logout(){
 
 function share(){
   var post = document.getElementById("getPost").value;
+  var newRow = document.createElement("div");
+
+  newRow.setAttribute("class", "post");
+
 
 
 
