@@ -1,6 +1,6 @@
 var count=2;
 var usernameArray = ["admin"];
-var passwordArray = ["123"];
+var passwordArray = ["password"];
 
 function validate(){
 
@@ -77,10 +77,10 @@ function logout(){
 
 function share(){
  var countup = this;
-          var newNode = document.createElement('div');
-          newNode.className = 'shared-post-box shared-post';
-          newNode.innerHTML = document.getElementById('getPost').value;
-          document.getElementById('col2').appendChild(newNode);
+          var newPost = document.createElement('div');
+          newPost.className = 'shared-post-box shared-post';
+          newPost.innerHTML = document.getElementById('getPost').value;
+          document.getElementById('col2').appendChild(newPost);
 
 
 }

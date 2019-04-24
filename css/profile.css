@@ -149,6 +149,7 @@ footer a{
 .bg-margin{
   margin: 15px;
   margin-bottom:  -45px;
+  border: 2px solid black;
 }
 
 .padding{
