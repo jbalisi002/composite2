@@ -67,17 +67,16 @@ function register(){
   alert("Sign up was successfull!");
 }
 
-
-
-
-
-
-
-
-
-
-
 //////////////////////////
 function logout(){
   window.location.replace("../login.html");
+}
+
+/////////////////////////
+
+function share(){
+  var post = document.getElementById("getPost").value;
+
+
+
 }
