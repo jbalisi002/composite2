@@ -21,7 +21,7 @@ function validate(){
 }
   if(valid){
     alert("Login was successful");
-    window.location.replace("home.html");
+    window.location.replace("sub/home.html");
     return false;
   }
   var again = " tries";
@@ -79,5 +79,5 @@ function register(){
 
 //////////////////////////
 function logout(){
-  window.location.replace("login.html");
+  window.location.replace("../login.html");
 }
