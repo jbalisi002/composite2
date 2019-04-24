@@ -9,10 +9,15 @@ header {
 }
 
 ul{
+
   border-bottom: 1px solid black;
 }
 
 li{
+  display: inline-block;
+}
+
+p{
   display: inline-block;
 }
 
@@ -165,4 +170,8 @@ footer a{
   margin: 15px;
   font-family: 'Raleway', sans-serif;
   border-bottom: 1px solid black;
+}
+
+.user-info{
+  text-align: center;
 }
