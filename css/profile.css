@@ -119,7 +119,10 @@ footer a{
   margin-right: 20px;
 }
 
-
+.logo{
+  padding-top: 5px;
+  padding-left: 10px;
+}
 
 .margin{
   margin: 8px;
