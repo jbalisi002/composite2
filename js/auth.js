@@ -65,6 +65,7 @@ function register(){
 
 
   alert("Sign up was successfull!");
+  alert("You may Log in now.");
 }
 
 //////////////////////////
@@ -77,7 +78,7 @@ function logout(){
 function share(){
  var countup = this;
           var newNode = document.createElement('div');
-          newNode.className = 'post new-post';
+          newNode.className = 'shared-post-box shared-post';
           newNode.innerHTML = document.getElementById('getPost').value;
           document.getElementById('col2').appendChild(newNode);
 

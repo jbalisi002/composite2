@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="../css/profile.css">
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bulma.css">
+    <link rel="stylesheet" href="../css/main.css">
 
     <script src="../js/auth.js"></script>
 
@@ -70,7 +71,27 @@
 
     <div class="accountbody">
 
+      <div class="contact-form">
+          <img src="../img/login.png" class="avatar">
+
+        <form name="login" onsubmit="return validateForm() ;" method="post">
+          <h2>ACCOUNT</h2>
+          <div class="textbox">
+            <input class="username input is-rounded" type="text" placeholder="Username" name="username">
+          </div>
+
+          <div class="textbox">
+            <input class="password input is-rounded" type="password" placeholder="Password" name="password">
+          </div>
+
+          <input class="submit button is-info" type="button" value="Log in" name="submit" id="input" onclick="validate()">
+
+          
+      </form>
+
     </div>
+
+  </div>
 
   </body>
 

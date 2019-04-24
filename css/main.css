@@ -54,7 +54,7 @@ html, body{
   height: 80px;
   border-radius: 50%;
   overflow: hidden;
-  top: calc(-80px/2);
+  top: calc(-90px/2);
   left: calc(50% - 40px);
 }
 
