@@ -49,6 +49,14 @@ li{
 
 }
 
+.accountbody{
+  max-width: 1500px;
+  margin: 20px auto 10px ;
+  height auto;
+  overflow: hidden;
+  background-color: white;
+}
+
 .col1 {
   width: 20%;
   float: left;

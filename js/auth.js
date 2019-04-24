@@ -75,12 +75,11 @@ function logout(){
 /////////////////////////
 
 function share(){
-  var post = document.getElementById("getPost").value;
-  var newRow = document.createElement("div");
-
-  newRow.setAttribute("class", "post");
-
-
+ var countup = this;
+          var newNode = document.createElement('div');
+          newNode.className = 'post';
+          newNode.innerHTML = document.getElementById('getPost').value;
+          document.getElementById('col2').appendChild(newNode);
 
 
 }
