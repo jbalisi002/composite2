@@ -77,7 +77,7 @@ function logout(){
 function share(){
  var countup = this;
           var newNode = document.createElement('div');
-          newNode.className = 'post';
+          newNode.className = 'post new-post';
           newNode.innerHTML = document.getElementById('getPost').value;
           document.getElementById('col2').appendChild(newNode);
 
