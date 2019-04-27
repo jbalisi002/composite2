@@ -2,7 +2,7 @@ var count=2;
 var usernameArray = ["admin"];
 var passwordArray = ["password"];
 
-function validate(){
+function validate(){ // function to validate if user will be redirected to home page
 
   var user = document.login.username.value;
   var pass = document.login.password.value;
@@ -45,7 +45,7 @@ function validate(){
 }
 
 ///////////////////////////
-function register(){
+function register(){ //function for sign up
   var newUser = document.getElementById('newUser').value;
   var newPass = document.getElementById('newPass').value;
 
@@ -63,19 +63,22 @@ function register(){
     pval = pval + passwordArray[i];
   }
 
+  window.localStorage.setItem('usernameArray', JSON.stringify(newUser));
+  window.localStorage.setItem('passwordArray', JSON.stringify(newPass));
+
 
   alert("Sign up was successfull!");
   alert("You may Log in now.");
 }
 
 //////////////////////////
-function logout(){
+function logout(){ //logout funcition
   window.location.replace("../login.html");
 }
 
 /////////////////////////
 
-function share(){
+function share(){ //function for the share post button
  var countup = this;
           var newPost = document.createElement('div');
           newPost.className = 'shared-post-box shared-post';
